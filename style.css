@@ -1,0 +1,87 @@
+:root {
+  /* colors */
+  --Black: hsl(0, 0, 0);
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+}
+
+html {
+  /* border-box: add border and padding without increasing box-size */
+  box-sizing: border-box;
+  color: var(--Black);
+}
+
+/* inherit box-sizing from .html */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--White);
+  font-family: "Outfit";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 5px 0;
+}
+
+p {
+  font-size: 15px;
+  margin: 5px;
+}
+
+.qr-main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--Light-gray);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  width: 260px;
+  height: 380px;
+  border-radius: 1rem;
+
+  background-color: var(--White);
+  box-shadow: 10px 20px 30px var(--Light-gray);
+}
+
+.qr {
+  padding: 1rem;
+  border-radius: 10%;
+}
+
+.card .text {
+  text-align: center;
+  font-family: "Outfit";
+
+  padding: 0 1rem 1rem 1rem;
+}
+
+p {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--Dark-blue);
+}
+
+span {
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: var(--Grayish-blue);
+}
