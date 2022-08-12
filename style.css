@@ -11,6 +11,7 @@ html {
   /* border-box: add border and padding without increasing box-size */
   box-sizing: border-box;
   color: var(--Black);
+  font-family: 'Outfit';
 }
 
 /* inherit box-sizing from .html */
@@ -24,7 +25,6 @@ html {
 
 body {
   background-color: var(--White);
-  font-family: "Outfit";
 }
 
 h1,
@@ -76,7 +76,7 @@ p {
 
 .card .text {
   text-align: center;
-  font-family: "Outfit";
+  font-family: 'Outfit';
 
   padding: 0 1rem 1rem 1rem;
 }
@@ -91,4 +91,22 @@ span {
   font-weight: 400;
   font-size: 0.75rem;
   color: var(--Grayish-blue);
+  font-family: 'Outfit';
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 375px;
+    height: 600px;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  span {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
 }
